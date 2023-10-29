@@ -35,8 +35,8 @@ const mockedTasks: TaskType[] = [
   {
     topic: "Math",
     completedHours: 0,
-    totalHours: 6,
-    remainingHours: 6,
+    totalHours: 5,
+    remainingHours: 5,
     lastSession: "24/10/2023",
   },
   {
@@ -66,7 +66,7 @@ export default function App() {
       <View className="flex flex-grow mb-10 rounded-xl justify-evenly">
         {mockedTasks.map((task) => {
           return (
-            <View className="bg-blue-300 my-4 rounded-md">
+            <View className="flex bg-blue-300 rounded-md border border-blue-400" >
               <Text className="text-2xl tracking-wide text-center">
                 {task.topic}
               </Text>
